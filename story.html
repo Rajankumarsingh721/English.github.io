@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+		*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.banner-title h2
+{
+      margin-top: 100px;
+      color: white;
+      font-size: 50px;
+      line-height: 50px;
+      
+}
+.banner-title p.lead
+{
+      color: white;
+      padding: 10px;
+      padding-bottom: 70px;
+}
+                               
+
+/*banner end*/
+h1
+{
+	font-family: 'pacifico', cursive;
+	font-size: 70px;
+    z-index: 5;
+    line-height: 100px;
+    margin: 10px 50px;
+	padding-right: 700px;
+}
+#pic
+{
+	background: #000 url("https://images.unsplash.com/photo-1544006658-89bde88e87c6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8bWFuJTIwY29tcHV0ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80") ;
+	color: white;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	
+	position: relative;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.color-overlay
+{
+width: 100%;
+height: 100%;
+ background-color: rgba(11, 21, 77,0.6);
+position: absolute;
+left: 0px;
+}
+                                  
+
+header
+		{
+			
+			max-width: 1200px;
+			margin: 10px auto;
+			padding: 10px;
+      box-sizing: border-box;
+       z-index: 1;
+ }
+
+		.logo
+		{
+			color: black;
+			font-size: 30px;
+			box-sizing: border-box;
+			float: left;
+			text-align: center;
+			line-height: 60px;
+			padding: 0 20px;
+			font-weight: 700;
+			text-decoration: none;
+            z-index: 1;
+		}
+                                                                  nav
+                                                                 {
+                                                                 	float: right;
+                                                                 	 z-index: 1;
+
+                                                                 }
+                                                                 .clearfix
+                                                                 {
+                                                                 	clear:both;
+                                                                 }
+                                                                 nav ul
+                                                                 {
+                                                                      margin: 0;
+                                                                      padding: 0;
+                                                                      z-index: 1;
+                                                                      display: flex;
+                                                                 }
+                                                                 nav ul li 
+                                                                 {
+                                                                 	list-style-type: none;
+                                                                 	z-index: 1;
+                                                                 }
+                                                                nav ul li a
+                                                                 {
+                                                                     margin: 10px 0;
+                                                                      padding: 10px 20px;
+                                                                      display: block;
+                                                                      text-decoration: none;
+                                                                      color: white;
+                                                                      z-index: 1;
+                                                                 }
+                                                                 nav ul li a.active,
+                                                                 nav ul li a:hover
+                                                                 {
+                                                                      color: cyan;
+                                                                      background-color: rgba(11, 21, 77,0.8);
+                                                                      transition: 0.5s;
+                                                                 }
+                                                                 @media (max-width: 768px)
+                                                                 {
+
+																										      h1
+																										{
+																											font-family: 'pacifico', cursive;
+																											font-size: 50px;
+																										    z-index: 5;
+																										    line-height: 100px;
+																										    
+																										}
+                                                                 	.menu-toggle
+                                                                 	{
+                                                                        margin: 20px;
+                                                                        display: block;
+                                                                	 width: 40px;
+                                                                		height: 40px;		
+                                                                	 float: right;
+                                                                	  color: white;
+                                                                	  cursor: pointer;
+                                                                     font-size: 30px;
+                                                                	text-align: center;
+                                                                	 z-index: 1;
+                                                                 	}
+                                                                 	.menu-toggle:before
+                                                                 	{
+                                                                 		content: '\f0c9';
+                                                                 		font-family: fontAwesome;
+                                                                 		line-height: 40px;
+                                                                 		 z-index: 1;
+                                                                 	}
+
+                                                                 	.menu-toggle.active:before
+                                                                 	{
+                                                                 		content: '\f00d';
+                                                                 		z-index: 1;
+                                                                 	}
+                                                                 	nav
+                                                                 	{
+                                                                 		display: none;
+                                                                 		z-index: 1;
+                                                                 	}
+                                                                 	nav.active
+                                                                 	{
+                                                                 		display: block;
+                                                                 		width: 100%;
+                                                                 	}
+                                                                 	nav.active ul
+                                                                 	{
+                                                                 		display: block;
+                                                                 		background-color: white;
+                                                                 		z-index: 1;
+                                                                 	}
+                                                                 	nav.active ul li a
+                                                                 	{
+                                                                 		margin: 0px;
+                                                                        color: black;
+                                                                        z-index: 1;
+                                                                 	}
+                                                                 	
+                                                                		 	 .menu-toggle i
+                                                                		  {
+                                                                		  display: block;
+                                                                		  position: relative;
+                                                                		  bottom: 100px;
+                                                                		  left: 60px;
+                                                                          z-index: 1;
+                                                                		  }
+                                                                		 
+                                                                 }
+                                                     /*menu end*/
+
+ /*service box start*/    
+.card-body
+{
+  text-align: left;
+  padding: 10px;
+  overflow: hidden;
+}
+.card i.fa
+{
+	margin: 30px;
+	font-size: 70px;
+	color: #7158e2;
+}
+.card
+{
+	height: 400px;
+}
+
+.service-box i.fa
+{
+color: #2b68d9;
+font-size: 60px;
+margin-top: 30px;
+text-align: center;
+}
+
+.service-box h3
+{
+  text-align: left;
+  padding: 10px;
+}
+#box2
+{
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+.section
+{
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+}
+#section/* for footer */
+{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+}
+#sectionn /* for footer */
+{
+      padding: 20px;
+      padding-top: 50px;
+}
+
+.section h2.section-head
+{
+      color: black;
+      text-align: center;
+      margin-bottom: 40px;
+}
+
+/*service box end*/
+
+              /*footer */
+                .footer 
+                {
+                    background-color: #40407a;
+                      padding: 20px 0;
+                      color: white;
+                      padding-top: 60px;
+                }
+
+                .footer-widget a
+                {
+                      color: white;
+                     
+                }
+                .footer-widget i.fa 
+                {
+                      font-size: 20px;
+                      color: white;
+                }
+                .footer-widget ul li
+                {
+                      list-style-type: none;
+                      margin-bottom: 5px;
+
+                }
+                 li a
+                {
+                  text-decoration: none;
+                }
+                /*footer end*/
+ 
+}
+@media(max-width: 768px)
+{
+     
+      .banner-title h1 
+      {
+      	 color: white;
+      font-size: 18px;
+      
+      text-align: center;
+      
+}
+.banner-title p.lead
+{
+      color: #fff;
+      padding: 10px;
+}
+      
+      .service-box
+      {
+            padding: 20px;
+      }
+     
+      .footer-widget
+      {
+            padding: 20px;
+      }
+     
+      #logo
+      {
+            text-align: center;
+            margin: 10px 0;
+      }
+      #menu
+      {
+            float: left;
+            text-align: center;
+    }
+    .banner-title button
+    {
+      background-color: white;
+    }
+    .section
+    {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .banner-title h1
+
+    {
+    font-size: 1.7rem;
+    }
+    #menu li
+    {
+     align-items: center; 
+    }
+}
+
+
+	</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Navbar.js is a modern, mobile first navigation component for the modern web.">
+  <meta name="author" content="thednp">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+  
+  <title>Expert English Online course</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,800|Roboto+Condensed:400,800" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/prism.css" rel="stylesheet">
+  <link href="./src/css/navbar.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="content-wrapper">
+    <div class="container">
+      <nav class="navbar navigation" data-function="navbar">
+        <a class="brand" href="index.html" title="Home">Rajan Singh</a>
+        <button class="navbar-toggle">
+          <svg class="menu-icon" viewBox="0 0 1024 1024">
+            <path d="M896.876 319.65h-768.751c-14.152 0-25.625-11.473-25.625-25.625s11.473-25.625 25.625-25.625h768.751c14.153 0 25.625 11.473 25.625 25.625s-11.472 25.625-25.625 25.625z m0 256.25h-768.751c-14.152 0-25.625-11.472-25.625-25.625s11.473-25.625 25.625-25.625h768.751c14.153 0 25.625 11.472 25.625 25.625s-11.472 25.625-25.625 25.625z m0 256.25h-768.751c-14.152 0-25.625-11.472-25.625-25.625s11.473-25.625 25.625-25.625h768.751c14.153 0 25.625 11.472 25.625 25.625s-11.472 25.625-25.625 25.625z" />
+          </svg>
+        </button>
+
+        <div>
+          <ul class="nav">
+            <li class="active">
+              <a href="#">Tutorials
+                <svg class="parent-icon" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+                <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+              </a>
+              <ul class="subnav">
+                <li><a href="1index.html">English</a></li>
+                <li><a href="1left.html">JavaScript</a></li>
+                <li><a href="1left-menu.html">Php</a></li>
+                <li><a href="1right.html">Bootstrap</a></li>
+                <li><a href="1combo.html"></a></li>
+                <li><a href="1bootstrap.html">ServiceNow</a></li>
+                <li class="active"><a href="1bootstrap-extended.html">Others</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                Online 
+                <svg class="parent-icon" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+                <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+              </a>
+
+              <div class="subnav">
+                <ul class="row nomargin">
+                  <li class='col-4'>
+                    <span class="column-title">
+                     Services
+                      <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                        <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                      </svg>
+                    </span>
+                    <ul class="">
+                      <li>
+                        <a href="#">
+                         Online
+                          <svg class="parent-icon" viewBox="0 0 1024 1024">
+                            <path d="M366 698l196-196-196-196 60-60 256 256-256 256z" />
+                          </svg>
+                          <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                            <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                          </svg>
+                        </a>
+                        <ul class="subnav">
+                          <li>
+                            <a href="#">
+                              English
+                              <svg class="parent-icon" viewBox="0 0 1024 1024">
+                                <path d="M366 698l196-196-196-196 60-60 256 256-256 256z" />
+                              </svg>
+                              <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                                <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                              </svg>
+                            </a>
+                            <ul class="subnav">
+                              <li><a href="Verb.html">Verb</a></li>
+                              <li><a href="Infinitive_to.html">INFINITIVE WITH 'TO' AND GERUND</a></li>
+                              <li><a href="Tense">Tense</a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+
+                              <li><a href="#">Seniors</a></li>
+                            </ul>
+                          </li>
+
+                          <li><a href="#">Corporate</a></li>
+                          <li><a href="#">Industrial</a></li>
+                          <li><a href="#">Government</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Integrate</a></li>
+                      <li><a href="#">Options</a></li>
+                      <li><a href="#">Account</a></li>
+                    </ul>
+                  </li>
+                  <li class='col-4'>
+                    <span class="column-title">
+                      Hidden Text Box
+                      <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                        <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                      </svg>
+                    </span>
+                    <div class="subnav-content">
+                      <p>The content of this demo text box is hidden on mobile view, but can be toggled visible.</p>
+                      <p>Features a nice <a href="#">link anchor</a> affected by navbar styling.</p>
+                    </div>
+                  </li>
+                  <li class="col-4">
+                    <div class="subnav-content">
+                      <span class="column-title" style="display: flex; margin-bottom: 1rem">Visible Text Box</span>
+                      <p>This text box is fully visible on all views and is featuring a custom button unaffected by navbar styling.</p>
+                      <p><a class="btn btn-brand" href="#">Read More</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">Share
+                <svg class="parent-icon" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+                <svg class="parent-toggle" viewBox="0 0 1024 1024">
+                  <path d="M316 334l196 196 196-196 60 60-256 256-256-256z" />
+                </svg>
+              </a>
+              <ul class="subnav">
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://thednp.github.io/navbar.js/index.html" title="Share Navbar.js on Facebook">
+                    <svg class="menu-icon" viewBox="0 0 1024 1024">
+                      <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z" />
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/intent/tweet?text=Spread the word about %23NAVBARjs by @dnp_theme and download here http://thednp.github.io/navbar.js/index.html" title="Share Navbar.js on Twitter">
+                    <svg class="menu-icon" viewBox="0 0 1024 1024">
+                      <path d="M731.429 348.571c-21.714 9.714-44.571 16-69.143 19.429 25.143-14.857 44-38.857 53.143-66.857-23.429 13.714-49.143 24-76.571 29.143-21.714-23.429-53.143-37.714-87.429-37.714-66.286 0-120 53.714-120 120 0 9.143 0.571 18.857 2.857 27.429-100-5.143-188.571-52.571-248-125.714-10.286 17.714-16.571 38.857-16.571 60.571 0 41.714 19.429 78.286 52 100-20-0.571-38.857-6.286-57.143-14.857v1.143c0 58.286 44 106.857 98.857 117.714-10.286 2.857-18.286 4.571-29.143 4.571-7.429 0-14.857-1.143-22.286-2.286 15.429 47.429 59.429 82.286 112 83.429-41.143 32-92.571 51.429-149.143 51.429-9.714 0-19.429-0.571-28.571-1.714 53.143 33.714 116 53.714 184 53.714 220.571 0 341.714-182.857 341.714-341.714 0-5.143 0-10.286-0.571-15.429 23.429-16.571 44-37.714 60-62.286zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z" />
+                    </svg>
+                    <span>Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="copy navbar-content">
+            <span><a target="_blank" href="main/index.html"><button style="ba">LogIn</button></a> 
+              <!-- &copy; 2021</span> -->
+          </div>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="hero">
+          <div class="row" style="align-items: center">
+            <div class="col-6">
+              <img class="hidden-md" src="assets/img/nav1.jpg" alt="images">
+            </div>
+            
+            <div class="col-6">
+              <h1>Expert  <small>English Online Component</small></h1>
+              <div class="install">English Class Information</div>
+              <p class="lead">Topics </p>
+              <p>
+                <a class="btn btn-brand" href="#https://github.com/thednp/navbar.js/archive/master.zip">Download</a>
+                <a class="btn" href="https://www.facebook.com/rajankumarsingh721">Rajan Sir </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-inner main">
+          <h1>Tutorials</h1>
+          <div class="row boxes">
+            <div class="col-4">
+              <div class="box">
+                <p><b>English</b><br>
+                  <ul>
+                    <li>Verb</li>
+                    <li>Tense</li>
+                    <li>Part of speech</li>
+                    <li><a href="English.html"> Describe Story</a></li>
+                    <li>Group Discussions</li>
+                    <li>Presentation Skills</li>
+                  
+                  
+                 
+                </p>
+              </div>
+            </div>
+     
+
+            <div class="col-4">
+              <div class="box gray-0">
+                <p><b>     </b><br>
+                <ul>
+                  <li>Conversations</li>
+                  <li>Debates</li>
+                  <li>Role plays</li>
+                <li>Dramatization</li>
+                <li>JAM Topics (just a minute)</li>
+                  <li>Mock Interviews</li>
+              </ul>  
+                </p>
+              </div>
+            </div> 
+
+            <div class="col-4">
+              <div class="box">
+                <p><b>English</b><br>
+                  <ul>
+                    <li>Phrasal verbs</li>
+                    <li>Root words</li>
+                    <li>One word substitutions</li>
+                    <li>Daily Activites </li>
+                    <li>Tell me About</li>
+                    <li>Long Story</li>
+
+                
+                  
+                  
+                
+                </p>
+              </div>
+            </div>
+            
+                </p>
+              </div>
+            </div>
+          </div> 
+
+
+
+          <h1>1.How To Describe Story</h1>
+           <p class="lead">
+             <h3>
+            1. A friend in need is a friend indeed.    <a href=""></a></h3>
+<!--              
+           
+          </p> 
+
+
+<div class="code-wrapper col-12" >
+<pre><code class="language-javascript">
+  One day after heavy meal.                                                                                    
+  It was sleeping under a tree.
+  After while, there came a mouse and it started to play on the Lion.                                                                                
+
+
+Suddenly the Lion got up with anger and locked for those who disturbed its nice sleep.
+Then it saw a small Mouse standing trembling with fear.                                                                             
+
+
+ The Lion jumped on it and started to kill it.
+ The mouse requested the lion  forgive it.
+ the Lion felt pity and left it.
+ the mouse run away. 
+
+On another day, the lion was the caught  in a net by a Hunter.
+The mouse came there and cut the net.thus it escaped.
+there after once upon a time there lived in a lion in forest.
+The mouse and the lion became friends. they lived happily in the forest afterwards.
+</code></pre></div>
+
+        <div class="copy"><span><a target="_blank" href="#">Rajan Singh</a> &copy; 2021</span> <a href="#">Go back to top</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/js/polyfill.min.js"></script>
+  <script src="./src/js/navbar.es5.min.js"></script>
+  <script>
+    function toggleButtons() {
+      var navInitDemo = document.getElementById('navInitDemo'),
+        initCheck = document.getElementById('initCheck'),
+        spanText = document.getElementById('spanText');
+
+      if (navInitDemo.Navbar) {
+        navInitDemo.Navbar.dispose();
+        alert('NAV#' + navInitDemo.id + ' Destroyed');
+        spanText.innerHTML = 'Initialize';
+      } else {
+        new Navbar(navInitDemo);
+        alert('NAV#' + navInitDemo.id + ' Initialized');
+        spanText.innerHTML = 'Dispose';
+      }
+    }
+  </script>
+  <script src="./assets/js/prism.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.15-alpha1/dist/bootstrap-native-v5.js"></script>
+  <script src="./src/js/navbar.min.js"></script>
+  <script src="./assets/js/prism.js"></script>
+
+
+
+  
+                          <!-- 2nd card box end -->
+             
+						 <!-- footer part start -->
+             <div class="footer">
+              <div class="container">
+                <div class="row">
+                     <div class="col-3 col-md-3">
+                         <div class="footer-widget">
+                            <h3><b>Company</b></h3>
+                                    <ul>
+                                          <li><a href=""> Home</a></li>
+                                          <li><a href="">About</a></li>
+                                          <li><a href="">Services</a></li>
+                                          <li><a href="#main/index.html">SigIn</a></li>
+                                     </ul>
+                        </div>
+                     </div>
+                      <div class=" col-3 col-md-3">
+                        <div class="footer-widget">
+                               <h3><b>Business</b></h3>
+                                  
+                                 <ul>
+                                          <li><a href="">Project</a></li>
+                                          <li><a href="">Our Team</a></li>
+                                          <li><a href="">Blog</a></li>
+                                          <li><a href="">Customers</a></li>
+                                     </ul>
+                         </div>
+                        </div>
+                      <div class=" col-6 col-md-3">
+                         <div class="footer-widget">
+                            <h3><b>Get In Touch</b></h3>
+                            <p> <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;Noida sec-15, Pin-201301</p>
+
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; &nbsp; &nbsp;rajansir788@gmail.com</p>
+                                <p> <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;  &nbsp; &nbsp;&nbsp;  +91-7888734078</p>
+                        </div><br><br>
+                       </div><hr>
+
+            <div>
+             <div class="container-fluid">
+                   <div class="row">
+                         <div class="col-md-12" style="background-color:#40407a; color: white; font-size: 15px;">
+                              Copyright © 2021 Rajan Sir | Powered by Rajan Sir.
+                         </div>
+                        
+                   </div>
+             </div>
+             </div>
+            <!--id footer  -->
+                </div><!--row-->
+                </div><!--container-->
+              
+              </div><!--class footer part end-->
+            
+		 
+</body>
+
+</html>
