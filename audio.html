@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+    <!DOCTYPE html>
+    <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    .navbar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background-color: #000;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+    </style>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+    
+    /* Left column (menu) */
+    .left {
+      flex: 35%;
+      padding: 15px 0;
+    }
+    
+    .left h2 {
+      padding-left: 8px;
+    }
+    
+    /* Right column (page content) */
+    .right {
+      flex: 65%;
+      padding: 15px;
+    }
+    
+    /* Style the search box */
+    #mySearch {
+      width: 100%;
+      font-size: 18px;
+      padding: 11px;
+      border: 1px solid #ddd;
+    }
+    
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #myMenu li a {
+      padding: 12px;
+      text-decoration: none;
+      color: black;
+      display: block
+    }
+    
+    #myMenu li a:hover {
+      background-color: #eee;
+    }
+    </style>
+    
+   
+    
+    
+    
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Audio Rajan</title>
+  </head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="English.html">Rajan Singh</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+             
+
+              <div class="navbar">
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="mySearch" onkeyup="myFunction" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <!-- <ul id="myMenu"> -->
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Topics</a>
+
+                    
+                <!-- <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
+                <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+
+
+            
+                    
+
+
+              </div>
+              
+
+             
+
+             
+
+             
+
+
+             
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="ratio ratio-16x9">
+        <iframe src="English.html" title="YouTube video" allowfullscreen></iframe>
+      </div>
+
+
+     
+
+      <nav aria-label="...">
+        <ul class="pagination" id="myMenu">
+          <li class="page-item disabled">
+            <a class="page-link" href="" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="topic">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+      <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
